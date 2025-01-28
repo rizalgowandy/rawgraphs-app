@@ -19,7 +19,7 @@ function LoadFromFile({ loading, load }) {
   } = useDropzone({
     disabled: loading,
     onDrop,
-    accept: 'text/plan,text/javascript',
+    accept: 'text/plain,text/javascript,.js',
     maxFiles: 1,
   })
   return (
@@ -204,7 +204,7 @@ function CustomChartLoader({ isOpen, onClose, ...props }) {
       contentClassName="bg-white"
     >
       <Modal.Header closeButton>
-        <Modal.Title>Add a new custom chart</Modal.Title>
+        <Modal.Title>Load custom chart</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
